@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QM-Guru FAQ – Qualitätsmanagement einfach erklärt | QM-Guru.de</title>
+    <meta name="description" content="ISO 9001 verständlich erklärt: Praxistipps vom QM-Guru mit 30+ Jahren Erfahrung. So meistern KMU die Zertifizierung – ohne Fachchinesisch.">
+    <link rel="canonical" href="https://qm-guru.de/faq">
+    <meta property="og:title" content="QM-Guru FAQ – Qualitätsmanagement einfach erklärt">
+    <meta property="og:description" content="Praxistipps vom QM-Guru: ISO 9001 für KMU ohne Fachchinesisch.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"Wie komplex wird das mit ISO 9001 wirklich?","acceptedAnswer":{"@type":"Answer","text":"Man kann das kompliziert machen, aber wenn man es einfach aufbaut, tragen die Firmen das vor und gut ist."}},
+        {"@type":"Question","name":"Warum brauchen wir die ISO 9001?","acceptedAnswer":{"@type":"Answer","text":"Nachweis für die Qualität im Kundenmanagement. Punkt."}},
+        {"@type":"Question","name":"Soll ich als Unternehmer alles selbst machen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Zeit ist Geld – wenn du alles selber machst, machst du alle Fehler der Welt."}},
+        {"@type":"Question","name":"Wie detailliert muss das QM-Handbuch sein?","acceptedAnswer":{"@type":"Answer","text":"Das was wir beschrieben haben reicht für eine akkreditierte Zertifizierung. Völlig egal von welcher Stelle."}}
+    ]}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=Manrope:wght@300..800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root{--bg:#fdf8f3;--white:#fff;--ink:#1a1209;--ink-soft:#4d3f2e;--ink-muted:#9a8d7e;--terra:#c4622d;--terra-dark:#a85225;--terra-light:#e07a3a;--terra-pale:#fce8db;--terra-glow:rgba(196,98,45,0.08);--gold:#b8960f;--border:#e5ddd3;--font-display:'Newsreader',Georgia,serif;--font-body:'Manrope',-apple-system,sans-serif;--font-mono:'Fira Code',monospace}
+        *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+        body{font-family:var(--font-body);background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+        .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(20px);background:rgba(253,248,243,0.9);border-bottom:1px solid var(--border);transition:all .3s}
+        .nav.scrolled{box-shadow:0 2px 20px rgba(26,18,9,.06)}
+        .nav-brand{font-family:var(--font-display);font-size:1.3rem;font-weight:700;text-decoration:none;color:var(--ink)}.nav-brand span{color:var(--terra);font-style:italic}
+        .nav-cta{padding:.55rem 1.3rem;background:var(--terra);color:#fff;text-decoration:none;font-size:.82rem;font-weight:600;border-radius:100px;transition:all .3s}
+        .nav-cta:hover{background:var(--terra-dark);transform:translateY(-1px);box-shadow:0 4px 15px rgba(196,98,45,.3)}
+        .hero{padding:9rem 2rem 4rem;position:relative;overflow:hidden}
+        .hero::before{content:'';position:absolute;top:-50%;right:-20%;width:700px;height:700px;background:radial-gradient(circle,var(--terra-glow) 0%,transparent 60%);pointer-events:none}
+        .hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:2}
+        .hero-tag{font-family:var(--font-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.15em;color:var(--terra);margin-bottom:1.5rem;display:flex;align-items:center;gap:.6rem;opacity:0;animation:fadeUp .7s ease .1s forwards}
+        .hero-tag::before{content:'🧘';font-size:1rem}
+        .hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.15;font-weight:500;letter-spacing:-.01em;margin-bottom:1.5rem;opacity:0;animation:fadeUp .7s ease .2s forwards}
+        .hero h1 em{font-style:italic;color:var(--terra)}
+        .hero-desc{font-size:1.05rem;color:var(--ink-muted);max-width:520px;font-weight:400;line-height:1.8;opacity:0;animation:fadeUp .7s ease .35s forwards}
+        .hero-wisdom{margin-top:2.5rem;padding:1.5rem 2rem;background:var(--white);border:1px solid var(--border);border-radius:14px;display:flex;align-items:flex-start;gap:1rem;opacity:0;animation:fadeUp .7s ease .5s forwards}
+        .hero-wisdom-icon{font-size:1.6rem;line-height:1;min-width:30px;margin-top:.1rem}
+        .hero-wisdom-text{font-family:var(--font-display);font-size:1rem;font-style:italic;color:var(--ink-soft);line-height:1.6}
+        .hero-wisdom-attr{font-family:var(--font-body);font-style:normal;font-size:.72rem;color:var(--ink-muted);display:block;margin-top:.4rem}
+        .search-wrap{max-width:760px;margin:0 auto 3rem;padding:0 2rem}.search-box{position:relative}
+        .search-input{width:100%;padding:.9rem 1.2rem .9rem 2.8rem;background:var(--white);border:1.5px solid var(--border);border-radius:12px;font-family:var(--font-body);font-size:.92rem;color:var(--ink);outline:none;transition:all .3s}
+        .search-input::placeholder{color:var(--ink-muted)}.search-input:focus{border-color:var(--terra);box-shadow:0 0 0 3px var(--terra-glow)}
+        .search-icon{position:absolute;left:.9rem;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--ink-muted)}
+        .search-meta{font-family:var(--font-mono);font-size:.65rem;color:var(--ink-muted);margin-top:.4rem}
+        .faq-wrap{max-width:760px;margin:0 auto;padding:0 2rem}
+        .faq-section{margin-bottom:4rem;opacity:0;transform:translateY(20px);transition:all .7s cubic-bezier(.16,1,.3,1)}.faq-section.visible{opacity:1;transform:translateY(0)}
+        .faq-section-head{margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:2px solid var(--ink)}
+        .faq-section-title{font-family:var(--font-display);font-size:1.5rem;font-weight:600}
+        .faq-section-sub{font-size:.78rem;color:var(--ink-muted);margin-top:.2rem}
+        .faq-item{border-bottom:1px solid var(--border)}.faq-item:last-child{border-bottom:none}
+        .faq-q{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;padding:1.2rem 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+        .faq-q:hover .faq-q-text{color:var(--terra)}.faq-q-text{font-size:.95rem;font-weight:600;line-height:1.5;transition:color .2s;flex:1}
+        .faq-icon{width:26px;height:26px;min-width:26px;border:2px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all .3s;margin-top:1px}
+        .faq-icon svg{width:12px;height:12px;stroke:var(--ink-muted);transition:all .3s}
+        .faq-item.open .faq-icon{background:var(--terra);border-color:var(--terra)}.faq-item.open .faq-icon svg{stroke:#fff;transform:rotate(45deg)}
+        .faq-a{max-height:0;overflow:hidden;opacity:0;transition:max-height .5s cubic-bezier(.16,1,.3,1),opacity .3s}.faq-item.open .faq-a{opacity:1}
+        .faq-a-inner{padding:0 0 1.5rem}.faq-a-text{font-size:.9rem;color:var(--ink-soft);line-height:1.9;max-width:640px;font-weight:400}.faq-a-text strong{color:var(--ink);font-weight:700}
+        .guru-tip{margin:.8rem 0 0;padding:.8rem 1rem;background:var(--terra-pale);border-radius:10px;border-left:3px solid var(--terra);font-size:.82rem;color:var(--terra-dark);font-weight:500}
+        .guru-tip::before{content:'💡 Guru-Tipp: ';font-weight:700}
+        .faq-a-link{display:inline-flex;align-items:center;gap:.3rem;margin-top:.8rem;color:var(--terra);text-decoration:none;font-size:.8rem;font-weight:600;transition:gap .3s}.faq-a-link:hover{gap:.6rem}
+        .quote-strip{margin:2rem 0 3rem;padding:2rem;background:linear-gradient(135deg,var(--ink) 0%,#2a1e10 100%);border-radius:16px;color:#fff}
+        .quote-strip-text{font-family:var(--font-display);font-size:1.25rem;font-style:italic;line-height:1.5;max-width:580px}
+        .quote-strip-attr{margin-top:.8rem;font-size:.75rem;color:rgba(255,255,255,.5)}.quote-strip-attr strong{color:var(--terra-light)}
+        .cta-section{max-width:760px;margin:2rem auto 5rem;padding:0 2rem}
+        .cta-box{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:3rem;text-align:center;position:relative;overflow:hidden}
+        .cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--terra),var(--gold),var(--terra-light))}
+        .cta-emoji{font-size:2.5rem;margin-bottom:.8rem}.cta-title{font-family:var(--font-display);font-size:1.8rem;font-weight:600;margin-bottom:.5rem}
+        .cta-sub{color:var(--ink-muted);max-width:400px;margin:0 auto 1.5rem;font-size:.92rem}
+        .cta-btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+        .cta-primary{padding:.8rem 2rem;background:var(--terra);color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;border-radius:100px;transition:all .3s}
+        .cta-primary:hover{background:var(--terra-dark);transform:translateY(-2px);box-shadow:0 8px 25px rgba(196,98,45,.3)}
+        .cta-ghost{padding:.8rem 2rem;background:transparent;color:var(--ink);text-decoration:none;font-weight:500;font-size:.9rem;border-radius:100px;border:1.5px solid var(--border);transition:all .3s}.cta-ghost:hover{border-color:var(--ink)}
+        .no-results{text-align:center;padding:3rem;color:var(--ink-muted);display:none}.no-results.visible{display:block}.no-results a{color:var(--terra)}
+        .footer{max-width:760px;margin:0 auto;padding:1.5rem 2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink-muted);flex-wrap:wrap;gap:.8rem}
+        .footer a{color:var(--terra);text-decoration:none}.footer-links{display:flex;gap:1.5rem}
+        .btt{position:fixed;bottom:1.5rem;right:1.5rem;width:40px;height:40px;background:var(--terra);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:all .3s;z-index:50}.btt.visible{opacity:1}.btt svg{stroke:#fff;width:16px;height:16px}
+        .progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--terra),var(--gold));z-index:200;width:0}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+        @media(max-width:768px){.hero{padding:7rem 1.5rem 3rem}.faq-wrap,.search-wrap,.cta-section{padding:0 1.2rem}.hero-wisdom{flex-direction:column;gap:.5rem}.nav{padding:.8rem 1.2rem}.footer{flex-direction:column;text-align:center}}
+    </style>
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+    <nav class="nav" id="nav">
+        <a href="https://qm-guru.de" class="nav-brand">QM-<span>Guru</span>.de</a>
+        <a href="https://qm-guru.de/kontakt" class="nav-cta">Beratung anfragen</a>
+    </nav>
+
+    <header class="hero"><div class="hero-inner">
+        <div class="hero-tag">Der QM-Guru antwortet</div>
+        <h1>Qualitätsmanagement <em>ohne Kopfschmerzen</em></h1>
+        <p class="hero-desc">Die häufigsten Fragen zur ISO 9001 – beantwortet in der Sprache, die Unternehmer verstehen. Kein Fachchinesisch, keine Bürokratie.</p>
+        <div class="hero-wisdom">
+            <div class="hero-wisdom-icon">🎯</div>
+            <div><p class="hero-wisdom-text">„So wenig wie möglich, so viel wie nötig. Das System muss für den Kunden funktionieren, nicht umgekehrt."</p>
+            <span class="hero-wisdom-attr">— Holger Grosser, QM-Guru seit 1994</span></div>
+        </div>
+    </div></header>
+
+    <section class="search-wrap"><div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Was möchten Sie wissen? z.B. „Handbuch", „Risiko", „Ziele" ...">
+        <div class="search-meta" id="searchMeta">12 Guru-Antworten für KMU</div>
+    </div></section>
+
+    <main class="faq-wrap" id="faqContent">
+        <section class="faq-section">
+            <div class="faq-section-head"><h2 class="faq-section-title">Die großen Fragen zum Start</h2><p class="faq-section-sub">Grundsätzliches für Einsteiger und Skeptiker</p></div>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie komplex wird das mit ISO 9001 wirklich?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Man kann das kompliziert machen, aber <strong>wenn man es einfach aufbaut, tragen die Firmen das vor und gut ist</strong>. Mehr Schau kann man immer machen, geht auch mit einem anderen Ansatz. Da muss man halt die Firma neu erfinden – aber nicht mit mir.</p><div class="guru-tip">Die meisten Unternehmen machen ISO 9001 komplizierter als nötig. Ihr habt ein funktionierendes System – wir müssen es nur sichtbar machen.</div></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Warum brauchen wir die ISO 9001 überhaupt?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ganz einfach: <strong>Nachweis für die Qualität im Kundenmanagement.</strong> Punkt. Nicht kompliziert machen mit „strukturierter Skalierung" oder so – das könnt ihr nicht gut verkaufen. Ihr braucht das Zertifikat, weil Kunden es verlangen oder weil es Türen öffnet.</p></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Soll ich als Unternehmer lieber alles selbst machen oder Profis einkaufen?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ich kaufe mir die Leute auch ein – ich muss nicht alles selber machen. EDV zum Beispiel: keine Ahnung davon, die sollen das alleine machen. <strong>Zeit ist in jedem Unternehmen Geld.</strong> Wenn du alles selber machst, machst du alle Fehler der Welt – das wird am Ende teurer als wenn du einen Profi bezahlst.</p><div class="guru-tip">Jede Arbeit sieht einfach aus, wenn man sie bezahlen muss. Aber Ölwechsel, Steuerberater, ISO-Dokumentation alles selbst – das kostet mehr durch Fehler und Zeitverlust.</div></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Warum erklärt ihr nicht alles am Anfang auf einmal?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Ich mache keine umfassende Erklärung am Anfang mehr, weil <strong>da ist zu viel Zeit dazwischen und zu viel geht verloren</strong>. Wir machen erst das Handbuch mit Prozessen fertig, dann kommt der nächste Schritt. Schritt für Schritt – so bleibt alles frisch.</p></div></div></article>
+        </section>
+
+        <div class="quote-strip">
+            <p class="quote-strip-text">„Man kann das auch anders verkaufen, geht auch mit einem anderen Ansatz. Da muss man halt die Firma neu erfinden – aber nicht mit mir."</p>
+            <div class="quote-strip-attr"><strong>Holger Grosser</strong> · Der QM-Guru</div>
+        </div>
+
+        <section class="faq-section">
+            <div class="faq-section-head"><h2 class="faq-section-title">Dokumentation & Handbuch</h2><p class="faq-section-sub">Was ihr wirklich braucht – und was nicht</p></div>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie detailliert muss das QM-Handbuch sein?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Das, was wir beschrieben haben, <strong>reicht für eine DAkkS-akkreditierte Zertifizierung</strong>. Völlig egal von welcher Stelle. Man muss nicht weiter ins Detail gehen. Der Kunde beschreibt das, was er hat. Nicht umfangreich, aber alles ist da.</p><div class="guru-tip">Manchmal steht nur ein Satz im Handbuch – und das reicht völlig. Die Anforderungen der Norm sind oft „wachsweicher" als man denkt.</div></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Kann ich die Qualitätsziele selbst definieren oder muss das die Geschäftsführung machen?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Da müssten Sie mit der Geschäftsführung sprechen. <strong>Das können Sie nicht selber machen</strong> – auch im Audit muss die Geschäftsführung das vertreten. Welche messbaren Ziele gibt es? Umsatzsteigerung? Neukundengewinnung? Das muss der Chef sagen können.</p></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie gehen wir mit der Risikobewertung um?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Die Risikobewertung mache ich. Ich nehme die Vorlage „Projekte und Investitionen" die ihr schon habt und <strong>daraus mache ich die Risikobewertung</strong>. Aus euren echten Geschäftsentscheidungen leiten wir Risiken und Chancen ab.</p><div class="guru-tip">Risiken nicht künstlich erfinden. Was euch nachts wachhält – Lieferantenausfall, IT-Probleme, Fachkräftemangel – das sind eure echten Risiken.</div></div></div></article>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-section-head"><h2 class="faq-section-title">Audit & Zertifizierung</h2><p class="faq-section-sub">Was auf euch zukommt – und warum es nicht schlimm ist</p></div>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie bereiten wir uns am besten auf das Audit vor?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Am günstigsten: <strong>Öffnet die Managementbewertung von Anfang an.</strong> Da steht alles drin – Ziele, Audits, Ressourcen, Lieferanten, Kunden, Risiken. Der Auditor geht Punkt für Punkt durch. Wenn ihr die Managementbewertung könnt, seid ihr vorbereitet.</p><a href="https://qm-guru.de/kontakt" class="faq-a-link">Audit-Vorbereitung anfragen →</a></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Ist Ihr Zertifikat genauso anerkannt wie von einem akkreditierten Zertifizierer?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Nicht genauso anerkannt, aber <strong>es funktioniert</strong>. Am Anfang reicht eine nicht-akkreditierte Zertifizierung. Wenn ein großer Kunde ein akkreditiertes Zertifikat verlangt, habt ihr schon alle Dokumente und könnt schnell wechseln.</p></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Ist der Abschlussbericht schwer zu erstellen?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Nein. Sie beschreiben nur: <strong>Ist-Zustand aufnehmen, Soll-Zustand definieren, Dokumente erstellen.</strong> QM ist immer das Gleiche – Handbücher, Prozessbeschreibungen. Die Struktur bleibt, nur der Inhalt ändert sich je nach Kunde.</p></div></div></article>
+
+            <article class="faq-item"><div class="faq-q" onclick="toggle(this)"><h3 class="faq-q-text">Wie zeige ich meine Prozesse im externen Audit?</h3><div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><div class="faq-a-inner"><p class="faq-a-text">Zeigen Sie nur <strong>IHREN Prozess</strong>. Übersichtsseite im System öffnen, anhand konkreter Beispiele erklären. Wo Sie nichts mit zu tun haben: „Das macht die Kollegin." Sonst fragt der Auditor nach Details – und spätestens da ist Ende.</p><div class="guru-tip">Bereiten Sie 1–2 Vorzeigeprojekte vor, die gut dokumentiert sind. Die Ausnahmen gibt es immer – die wollen wir nicht sehen.</div></div></div></article>
+        </section>
+    </main>
+
+    <div class="no-results" id="noResults"><p>Keine Ergebnisse. <a href="https://qm-guru.de/kontakt">Frag den Guru direkt →</a></p></div>
+
+    <section class="cta-section"><div class="cta-box">
+        <div class="cta-emoji">🧘</div>
+        <h2 class="cta-title">Der Guru hilft weiter</h2>
+        <p class="cta-sub">Ihre Frage war nicht dabei? In einem kostenlosen Erstgespräch klären wir alles – pragmatisch und ohne Fachchinesisch.</p>
+        <div class="cta-btns">
+            <a href="https://qm-guru.de/kontakt" class="cta-primary">Kostenloses Erstgespräch →</a>
+            <a href="https://onlinecert.info" class="cta-ghost">OnlineCert kennenlernen</a>
+        </div>
+    </div></section>
+
+    <footer class="footer">
+        <div>&copy; 2026 QM-Guru.de · Holger Grosser · QM-Dienstleistungen</div>
+        <div class="footer-links"><a href="https://iso9001.info">ISO9001.info</a><a href="https://qmberater.info">QMBerater.info</a><a href="https://onlinecert.info">OnlineCert</a></div>
+    </footer>
+
+    <button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+    <script>
+        function toggle(el){const i=el.closest('.faq-item'),a=i.querySelector('.faq-a'),o=i.classList.contains('open');i.closest('.faq-section').querySelectorAll('.faq-item.open').forEach(x=>{if(x!==i){x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight='0'}});if(o){i.classList.remove('open');a.style.maxHeight='0'}else{i.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}}
+        const si=document.getElementById('searchInput'),sm=document.getElementById('searchMeta'),nr=document.getElementById('noResults');
+        si.addEventListener('input',function(){const q=this.value.toLowerCase().trim(),items=document.querySelectorAll('.faq-item'),secs=document.querySelectorAll('.faq-section'),qs=document.querySelectorAll('.quote-strip');let v=0;if(!q){items.forEach(i=>i.style.display='');secs.forEach(s=>s.style.display='');qs.forEach(b=>b.style.display='');sm.textContent='12 Guru-Antworten für KMU';nr.classList.remove('visible');return}items.forEach(i=>{if(i.textContent.toLowerCase().includes(q)){i.style.display='';v++}else i.style.display='none'});secs.forEach(s=>{s.style.display=s.querySelectorAll('.faq-item:not([style*="display: none"])').length?'':'none'});qs.forEach(b=>b.style.display='none');sm.textContent=v+' '+(v===1?'Ergebnis':'Ergebnisse');nr.classList.toggle('visible',v===0)});
+        const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1});
+        document.querySelectorAll('.faq-section').forEach(el=>obs.observe(el));
+        window.addEventListener('scroll',()=>{const s=window.scrollY,m=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('nav').classList.toggle('scrolled',s>50);document.getElementById('progress').style.width=(s/m*100)+'%';document.getElementById('btt').classList.toggle('visible',s>400)});
+    </script>
+</body>
+</html>
